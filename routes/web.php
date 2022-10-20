@@ -18,6 +18,14 @@ use App\Http\Controllers\ContactFormController;
 Route::get('tests/test', [ TestController::class, 'index']);
 // Route::resource('contacts', ContactFormController::class);
 
+Route::prefix('contacts') //prefixをつけると以降のグループ内の各ルートに特定のURIをプレフィックスとして付けることができる。
+->middleware(['auth']) //ログイン状態でしか表示されない
+->controller(ContactFormController::Class)
+->name('contacts.')//nameをつけると、グループ化されたすべてのルートの名前の前に’contacts’をつけられる。末尾に「.」が必要
+->group(function(){
+    Route::get('/', 'index')->name('index');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
