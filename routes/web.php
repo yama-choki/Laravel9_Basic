@@ -24,6 +24,9 @@ Route::prefix('contacts') //prefixをつけると以降のグループ内の各�
 ->name('contacts.')//nameをつけると、グループ化されたすべてのルートの名前の前に’contacts’をつけられる。末尾に「.」が必要
 ->group(function(){
     Route::get('/', 'index')->name('index');
+    Route::get('/create', 'create')->name('create');
+    Route::get('/', 'store')->name('store');
+
 });
 
 Route::get('/', function () {
