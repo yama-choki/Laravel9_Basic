@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 class TestController extends Controller
 {
     public function index(){
+        dd('test');
+
         $values = Test::all();
 
         $count = Test::count();
