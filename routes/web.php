@@ -25,7 +25,7 @@ Route::prefix('contacts') //prefixをつけると以降のグループ内の各�
 ->group(function(){
     Route::get('/', 'index')->name('index');
     Route::get('/create', 'create')->name('create');
-    Route::get('/', 'store')->name('store');
+    Route::post('/', 'store')->name('store');
 
 });
 
