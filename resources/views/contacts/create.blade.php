@@ -55,13 +55,13 @@
                                     <div class="relative">
                                         <label for="age" class="leading-7 text-sm text-gray-600">年齢</label>
                                         <select name="age">
-                                            <option value="">選択してください</option>
-                                            <option value="0">～19歳</option>
-                                            <option value="1">20歳～29歳</option>
-                                            <option value="2">30歳～39歳</option>
-                                            <option value="3">40歳～49歳</option>
-                                            <option value="4">50歳～59歳</option>
-                                            <option value="5">60歳～</option>
+                                            <option value="0">選択してください</option>
+                                            <option value="1">～19歳</option>
+                                            <option value="2">20歳～29歳</option>
+                                            <option value="3">30歳～39歳</option>
+                                            <option value="4">40歳～49歳</option>
+                                            <option value="5">50歳～59歳</option>
+                                            <option value="6">60歳～</option>
                                         </select>
                                     </div>
                                     </div>
